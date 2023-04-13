@@ -1,1 +1,9 @@
 <p>todo-list goes here</p>
+
+<ul class="todos">
+  <li *ngFor="let todo of todos">
+    <a routerLink="/todo/{{ todo.id }}">
+      <span class="badge">{{ todo.id }}</span> {{ todo.text }}
+    </a>
+  </li>
+</ul>

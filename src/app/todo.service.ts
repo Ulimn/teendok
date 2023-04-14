@@ -12,7 +12,7 @@ export class TodoService {
 
   getTodoList(): Observable<TodoListResponse> {
     return this.http.get<TodoListResponse>(
-      'http://localhost:60370/api/TodoService'
+      'https://app-re-azure-ing-demo.azurewebsites.net/api/TodoService?code=HJF7sPQntN9RRXyaCi43FRfkvaUkckS9h-c4r0PwL5KVAzFuVN9wQA=='
     );
   }
 }
